@@ -1,0 +1,35 @@
+body {
+  background: rgb(19, 6, 19);
+  font-family: monospace;
+  font-size: 11pt;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+.title {
+  font-size: 45pt;
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+  font-size: 16pt;
+  color: blue;
+}
+
+a:link,
+a:visited {
+  color: rgb(61, 98, 219);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(109, 182, 250);
+}
