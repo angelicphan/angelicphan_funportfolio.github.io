@@ -120,6 +120,18 @@ section {
   margin-right: 100px;
 }
 
+.card {
+  background-color: rgba(101, 27, 219, 0.281);
+}
+
+.card-title {
+  color: #e4e2ff;
+}
+
+.card-text {
+  color: rgb(109, 182, 250);
+}
+
 footer > p {
   margin-top: 40px;
   margin-bottom: 20px;
