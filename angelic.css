@@ -137,6 +137,10 @@ label {
   color: #e4e2ff;
 }
 
+#contact-container {
+  display: flex;
+}
+
 #contact-form {
   width: 45%;
   float: left;
@@ -145,6 +149,10 @@ label {
 #contact-info {
   width: 45%;
   float: right;
+}
+
+span {
+  color: #e4e2ff;
 }
 
 footer > p {
