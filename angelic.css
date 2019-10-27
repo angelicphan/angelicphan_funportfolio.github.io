@@ -2,6 +2,8 @@ body {
   background: rgb(19, 6, 19);
   font-family: monospace;
   font-size: 11pt;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header {
@@ -11,6 +13,7 @@ body {
 
 h1 {
   font-size: 18pt;
+  color: #e4e2ff;
 }
 
 .title {
@@ -21,7 +24,7 @@ h1 {
 .menu {
   text-align: center;
   font-size: 16pt;
-  color: blue;
+  color: #e4e2ff;
 }
 
 a:link,
@@ -32,4 +35,95 @@ a:visited {
 
 a:hover {
   color: rgb(109, 182, 250);
+}
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+p {
+  color: rgb(109, 182, 250);
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.animals {
+  display: flex;
+  justify-content: center;
+}
+
+#panda,
+#sloth {
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px rgb(10, 10, 10, 0.2),
+    -1px -1px 10px 1px rgb(10, 10, 10, 0.2);
+}
+
+#panda:hover,
+#sloth:hover {
+  box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
+    -1px -1px 10px 1px rgb(109, 182, 250);
+}
+
+#vs {
+  align-self: center;
+  font-size: 20pt;
+  color: white;
+}
+
+.list {
+  color: rgb(109, 182, 250);
+}
+
+#likes-info {
+  display: flex;
+}
+
+#likes-img {
+  float: right;
+}
+
+#lazy-lofi-img {
+  box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
+    -1px -1px 10px 1px rgb(109, 182, 250);
+  border-radius: 3px;
+}
+
+#likes-list {
+  float: left;
+  margin-right: 100px;
+}
+
+footer > p {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: right;
+  color: #e4e2ff;
+  font-size: 8pt;
 }
