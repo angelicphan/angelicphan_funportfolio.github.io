@@ -136,11 +136,12 @@ section {
 label {
   color: #e4e2ff;
 }
-
 #contact-container {
   display: flex;
+  justify-content: center;
 }
 
+/*
 #contact-form {
   width: 45%;
   float: left;
@@ -149,6 +150,10 @@ label {
 #contact-info {
   width: 45%;
   float: right;
+}*/
+
+#contact-info {
+  width: 50%;
 }
 
 span {
