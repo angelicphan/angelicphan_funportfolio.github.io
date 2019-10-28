@@ -47,24 +47,110 @@ mark {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 400px) {
+  .carousel-caption {
+    font-size: 5pt;
+  }
+  #likes-img {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 80%;
+  }
+  #panda,
+  #sloth {
+    width: 170px;
+    height: 100px;
+  }
+  footer > p {
+    font-size: 7pt;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+  .carousel-caption {
+    font-size: 7pt;
+  }
+  #likes-img {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 80%;
+  }
+  #panda,
+  #sloth {
+    width: 170px;
+    height: 100px;
+  }
+  footer > p {
+    font-size: 8pt;
   }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+  .carousel-caption {
+    font-size: 8pt;
+  }
+  #likes-img {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 80%;
+  }
+  #panda,
+  #sloth {
+    width: 250px;
+    height: 150px;
+  }
+  footer > p {
+    font-size: 8pt;
+  }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
+  .carousel-caption {
+    font-size: 9pt;
+  }
+  #likes-img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #likes-list {
+    margin-right: 100px;
+  }
+  #panda,
+  #sloth {
+    width: 300px;
+    height: 200px;
+  }
+  footer > p {
+    font-size: 8pt;
+  }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1040px;
+  }
+  .carousel-caption {
+    font-size: 11pt;
+  }
+  #likes-img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #likes-list {
+    margin-right: 100px;
+  }
+  #panda,
+  #sloth {
+    width: 300px;
+    height: 200px;
+  }
+  footer > p {
+    font-size: 8pt;
   }
 }
 
@@ -85,11 +171,6 @@ section {
   margin-bottom: 20px;
 }
 
-.animals {
-  display: flex;
-  justify-content: center;
-}
-
 #panda,
 #sloth {
   margin: auto;
@@ -104,7 +185,6 @@ section {
 }
 
 #vs {
-  align-self: center;
   font-size: 20pt;
   color: white;
 }
@@ -114,22 +194,20 @@ section {
 }
 
 #likes-info {
-  display: flex;
-}
-
-#likes-img {
-  float: right;
+  display: grid;
 }
 
 #lazy-lofi-img {
   box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
     -1px -1px 10px 1px rgb(109, 182, 250);
   border-radius: 3px;
+  width: 100%;
+  height: 100%;
 }
 
 #likes-list {
-  float: left;
-  margin-right: 100px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .card {
@@ -154,6 +232,7 @@ label {
 #contact-container {
   display: flex;
   justify-content: center;
+  width: 70%;
 }
 
 /*
@@ -165,11 +244,12 @@ label {
 #contact-info {
   width: 45%;
   float: right;
-}*/
+}
 
 #contact-info {
   width: 50%;
 }
+*/
 
 span {
   color: #e4e2ff;
@@ -180,5 +260,4 @@ footer > p {
   margin-bottom: 20px;
   text-align: right;
   color: #e4e2ff;
-  font-size: 8pt;
 }
