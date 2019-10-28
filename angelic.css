@@ -58,7 +58,7 @@ mark {
   }
   #panda,
   #sloth {
-    width: 130px;
+    width: 120px;
     height: 80px;
   }
   footer > p {
@@ -213,11 +213,6 @@ section {
 
 #likes-info {
   display: grid;
-}
-
-#likes-img {
-  display: flex;
-  justify-content: center;
 }
 
 #lazy-lofi-img {
