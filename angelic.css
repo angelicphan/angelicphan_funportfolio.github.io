@@ -64,6 +64,14 @@ mark {
   footer > p {
     font-size: 5pt;
   }
+  #contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  #contact-info {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
 }
 @media (min-width: 400px) {
   .carousel-caption {
@@ -81,6 +89,14 @@ mark {
   }
   footer > p {
     font-size: 7pt;
+  }
+  #contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  #contact-info {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 576px) {
@@ -103,6 +119,14 @@ mark {
   footer > p {
     font-size: 8pt;
   }
+  #contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  #contact-info {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -123,6 +147,14 @@ mark {
   }
   footer > p {
     font-size: 8pt;
+  }
+  #contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #contact-info {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 992px) {
@@ -147,6 +179,14 @@ mark {
   footer > p {
     font-size: 8pt;
   }
+  #contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #contact-info {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -170,6 +210,14 @@ mark {
   footer > p {
     font-size: 8pt;
   }
+  #contact-form {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  #contact-info {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
 }
 
 .carousel {
@@ -189,6 +237,11 @@ section {
   margin-bottom: 20px;
 }
 
+#vs {
+  font-size: 20pt;
+  color: white;
+}
+
 #panda,
 #sloth {
   margin: auto;
@@ -200,11 +253,6 @@ section {
 #sloth:hover {
   box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
     -1px -1px 10px 1px rgb(109, 182, 250);
-}
-
-#vs {
-  font-size: 20pt;
-  color: white;
 }
 
 .list {
@@ -248,26 +296,8 @@ label {
   color: #e4e2ff;
 }
 #contact-container {
-  display: flex;
-  justify-content: center;
-  width: 70%;
+  display: grid;
 }
-
-/*
-#contact-form {
-  width: 45%;
-  float: left;
-}
-
-#contact-info {
-  width: 45%;
-  float: right;
-}
-
-#contact-info {
-  width: 50%;
-}
-*/
 
 span {
   color: #e4e2ff;
