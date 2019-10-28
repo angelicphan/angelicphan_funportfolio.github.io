@@ -37,6 +37,10 @@ a:hover {
   color: rgb(109, 182, 250);
 }
 
+mark {
+  background-color: rgba(162, 200, 231, 0.822);
+}
+
 .container {
   width: 100%;
   margin-top: 20px;
