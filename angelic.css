@@ -123,6 +123,9 @@ section {
 .card {
   background-color: rgba(101, 27, 219, 0.281);
   margin: 10px;
+  box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
+    -1px -1px 10px 1px rgb(109, 182, 250);
+  border-radius: 3px;
 }
 
 .card-title {
