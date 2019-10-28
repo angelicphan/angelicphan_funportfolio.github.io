@@ -68,6 +68,14 @@ mark {
   }
 }
 
+.carousel {
+  width: 80%;
+  height: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
 p {
   color: rgb(109, 182, 250);
 }
