@@ -51,52 +51,16 @@ mark {
   .carousel-caption {
     font-size: 5pt;
   }
-  #likes-img {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    width: 80%;
-  }
-  #panda,
-  #sloth {
-    width: 120px;
-    height: 80px;
-  }
-  footer > p {
+  footer {
     font-size: 5pt;
-  }
-  #contact-form {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
-  #contact-info {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 400px) {
   .carousel-caption {
     font-size: 5pt;
   }
-  #likes-img {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    width: 80%;
-  }
-  #panda,
-  #sloth {
-    width: 170px;
-    height: 100px;
-  }
-  footer > p {
+  footer {
     font-size: 7pt;
-  }
-  #contact-form {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
-  #contact-info {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 576px) {
@@ -106,26 +70,8 @@ mark {
   .carousel-caption {
     font-size: 7pt;
   }
-  #likes-img {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    width: 80%;
-  }
-  #panda,
-  #sloth {
-    width: 170px;
-    height: 100px;
-  }
-  footer > p {
+  footer {
     font-size: 8pt;
-  }
-  #contact-form {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
-  #contact-info {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 768px) {
@@ -135,26 +81,8 @@ mark {
   .carousel-caption {
     font-size: 8pt;
   }
-  #likes-img {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    width: 80%;
-  }
-  #panda,
-  #sloth {
-    width: 250px;
-    height: 150px;
-  }
-  footer > p {
+  footer {
     font-size: 8pt;
-  }
-  #contact-form {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-  #contact-info {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 992px) {
@@ -164,28 +92,8 @@ mark {
   .carousel-caption {
     font-size: 9pt;
   }
-  #likes-img {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-  }
-  #likes-list {
-    margin-right: 100px;
-  }
-  #panda,
-  #sloth {
-    width: 300px;
-    height: 200px;
-  }
-  footer > p {
+  footer {
     font-size: 8pt;
-  }
-  #contact-form {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-  #contact-info {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
   }
 }
 @media (min-width: 1200px) {
@@ -195,28 +103,8 @@ mark {
   .carousel-caption {
     font-size: 11pt;
   }
-  #likes-img {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-  }
-  #likes-list {
-    margin-right: 100px;
-  }
-  #panda,
-  #sloth {
-    width: 300px;
-    height: 200px;
-  }
-  footer > p {
+  footer {
     font-size: 8pt;
-  }
-  #contact-form {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-  #contact-info {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
   }
 }
 
@@ -237,50 +125,13 @@ section {
   margin-bottom: 20px;
 }
 
-#vs {
-  font-size: 20pt;
-  color: white;
-}
-
-#panda,
-#sloth {
-  margin: auto;
-  box-shadow: 1px 1px 10px 1px rgb(10, 10, 10, 0.2),
-    -1px -1px 10px 1px rgb(10, 10, 10, 0.2);
-}
-
-#panda:hover,
-#sloth:hover {
-  box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
-    -1px -1px 10px 1px rgb(109, 182, 250);
-}
-
 .list {
   color: rgb(109, 182, 250);
-}
-
-#likes-info {
-  display: grid;
-}
-
-#lazy-lofi-img {
-  box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
-    -1px -1px 10px 1px rgb(109, 182, 250);
-  border-radius: 3px;
-  width: 100%;
-  height: 100%;
-}
-
-#likes-list {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
 }
 
 .card {
   background-color: rgba(101, 27, 219, 0.281);
   margin: 10px;
-  box-shadow: 1px 1px 10px 1px rgb(109, 182, 250),
-    -1px -1px 10px 1px rgb(109, 182, 250);
   border-radius: 3px;
 }
 
@@ -295,17 +146,29 @@ section {
 label {
   color: #e4e2ff;
 }
-#contact-container {
-  display: grid;
-}
 
 span {
   color: #e4e2ff;
 }
 
-footer > p {
-  margin-top: 40px;
+footer {
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: right;
   color: #e4e2ff;
+}
+
+.bio-text {
+  /*background-color: rgba(167, 189, 231, 0.185);*/
+  background-color: rgba(101, 27, 219, 0.281);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#contact-info > img {
+  max-height: 400px;
+  width: auto;
+  object-fit: cover;
+  object-position: left 70%;
 }

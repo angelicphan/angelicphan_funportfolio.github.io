@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Angelic Phan - Contact</title>
+    <!--jQuery-->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
+    <!--Bootstrap-->
     <link
       rel="stylesheet"
       type="text/css"
@@ -18,83 +20,33 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
     ></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/8a738de79e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--My Style Sheet-->
     <link rel="stylesheet" type="text/css" href="angelic.css" media="screen" />
   </head>
-  <body>
+  <body id="contact-body">
     <header class="header">
       <h1 class="title">Portfolio: About Angelic</h1>
       <div>
         <nav class="menu">
           <a href="index.html">Home</a> | <a href="bio.html">About Me</a> |
+          <a href="projects.html">Projects</a> |
           <a href="Angelic_Phan_Resume.pdf" target="_blank">Resume</a> |
-          <a href="playlist.html">Playlist</a> |
           <a href="contact.html"><mark>Contact</mark></a>
         </nav>
       </div>
     </header>
-    <section class="container" id="contact-container">
-      <div class="card" id="contact-form">
-        <div class="card-body">
-          <h4 class="card-title">Contact Form</h4>
-          <p class="card-text">
-            Please fill out the following form if you want to message me!
-          </p>
-          <form action="mailto:angelic.phan@gmail.com" method="post" enctype="text/plain">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                placeholder="john.smith@gmail.com"
-              />
-            </div>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="John Smith"
-              />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input
-                type="text"
-                class="form-control"
-                id="subject"
-                placeholder="You're an amazing person!"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                type="text"
-                class="form-control"
-                id="message"
-                placeholder=""
-                rows="5"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-sm">
-              SUBMIT
-            </button>
-            <button type="reset" class="btn btn-secondary btn-sm">
-                RESET
-            </button>
-          </form>
-        </div>
-      </div>
+    <section class="container" id="contact-section">
       <div class="card" id="contact-info">
         <img
+          id="contact-img"
           class="card-img-top"
-          src="http://giphygifs.s3.amazonaws.com/media/i0VylPnssOKT6/giphy.gif"
-          alt="sailor moon gif"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          title="https://giphy.com/gifs/channelfrederator-sailor-moon-channel-frederator-mars-i0VylPnssOKT6"
+          src="angelic_cl.jpeg"
+          alt="photo of angelic"
         />
         <div class="card-body">
           <h4 class="card-title">My Contact Info</h4>
@@ -107,17 +59,13 @@
               <i class="fab fa-github"></i>
               <a href="https://github.com/angelicphan" target="_blank"><span>Github account:</span> angelicphan</a>
             </p>
-            <p>Feel free to send me an email if you have anything nice to tell me. No hate please.
-              Additionally, checkout my projects on github. Thanks!
+            <p>Feel free to send me an email about job opportunities!
+              Additionally, checkout my projects on github.
             </p>
           </p>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <p>
-        Created by: Angelic Phan | October 8, 2019 | Last Modified: 2020
-      </p>
-    </footer>
+    <footer class="footer">Angelic Phan <i class="far fa-copyright"></i> 2020</footer>
   </body>
 </html>
