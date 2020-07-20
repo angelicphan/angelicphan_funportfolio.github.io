@@ -1,4 +1,4 @@
-# angelicphan.github.io
+# angelicphan_funportfolio.github.io
 
 This is a very informal portfolio. You can see part of my personality, the funny and silly side, from this, but definitely not all of it. I'm actually a pretty hard working person, and can be serious when I need to.
 
