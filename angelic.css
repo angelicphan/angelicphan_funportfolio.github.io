@@ -1,23 +1,25 @@
 body {
   background: rgb(19, 6, 19);
   font-family: monospace;
-  font-size: 11pt;
+  font-size: 14pt;
   margin-left: 20px;
   margin-right: 20px;
+  position: relative;
+  min-height: 100vh;
 }
 
 .header {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
 }
 
 h1 {
-  font-size: 18pt;
+  font-size: 20pt;
   color: #e4e2ff;
 }
 
 .title {
-  font-size: 45pt;
+  font-size: 50pt;
   text-align: center;
 }
 
@@ -37,8 +39,25 @@ a:hover {
   color: rgb(109, 182, 250);
 }
 
+@keyframes blinking-tab {
+  0% {
+    background-color: transparent;
+  }
+  49% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(162, 200, 231, 0.52);
+  }
+  100% {
+    background-color: rgba(162, 200, 231, 0.52);
+  }
+}
+
 mark {
-  background-color: rgba(162, 200, 231, 0.822);
+  color: #e4e2ff;
+  padding: 5px;
+  animation: blinking-tab 1s linear infinite;
 }
 
 .container {
@@ -48,76 +67,69 @@ mark {
   margin-right: auto;
 }
 @media (min-width: 200px) {
-  .carousel-caption {
-    font-size: 5pt;
-  }
   footer {
-    font-size: 5pt;
+    font-size: 8pt;
   }
 }
 @media (min-width: 400px) {
-  .carousel-caption {
-    font-size: 5pt;
-  }
   footer {
-    font-size: 7pt;
+    font-size: 9pt;
+  }
+  #identifiers {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
-  .carousel-caption {
-    font-size: 7pt;
-  }
   footer {
-    font-size: 8pt;
+    font-size: 10pt;
+  }
+  #identifiers {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
-  .carousel-caption {
-    font-size: 8pt;
-  }
   footer {
-    font-size: 8pt;
+    font-size: 10pt;
+  }
+  #identifiers {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-  .carousel-caption {
-    font-size: 9pt;
-  }
   footer {
-    font-size: 8pt;
+    font-size: 10pt;
+  }
+  #identifiers {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1040px;
   }
-  .carousel-caption {
-    font-size: 11pt;
-  }
   footer {
-    font-size: 8pt;
+    font-size: 10pt;
+  }
+  #identifiers {
+    grid-template-columns: 1fr;
   }
 }
 
 .carousel {
-  width: 80%;
-  height: 65%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 50px;
 }
 
 p {
-  color: rgb(109, 182, 250);
+  color: rgb(121, 140, 201);
 }
 
 section {
@@ -125,22 +137,35 @@ section {
   margin-bottom: 20px;
 }
 
+.content {
+  padding-bottom: 30px;
+}
+
 .list {
-  color: rgb(109, 182, 250);
+  color: rgb(121, 140, 201);
 }
 
 .card {
-  background-color: rgba(101, 27, 219, 0.281);
+  background-color: rgba(41, 55, 85, 0.8);
   margin: 10px;
   border-radius: 3px;
 }
 
+.projects-card {
+  text-align: center;
+  height: 320px;
+  width: 98%;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
 .card-title {
+  padding: 10px;
   color: #e4e2ff;
 }
 
 .card-text {
-  color: rgb(109, 182, 250);
+  color: rgb(121, 140, 201);
 }
 
 label {
@@ -152,23 +177,61 @@ span {
 }
 
 footer {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px;
   color: #e4e2ff;
 }
 
 .bio-text {
-  /*background-color: rgba(167, 189, 231, 0.185);*/
-  background-color: rgba(101, 27, 219, 0.281);
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
-#contact-info > img {
-  max-height: 400px;
-  width: auto;
-  object-fit: cover;
-  object-position: left 70%;
+@keyframes border-color {
+  0% {
+    border-left-color: rgb(21, 41, 105);
+    border-right-color: rgb(109, 182, 250);
+    border-bottom-color: rgb(59, 87, 114);
+  }
+  49% {
+    border-top-color: rgb(20, 46, 131);
+    border-bottom-color: rgb(98, 132, 163);
+    border-left-color: rgb(24, 78, 129);
+  }
+  59% {
+    border-right-color: rgb(23, 35, 77);
+    border-left-color: rgb(24, 78, 129);
+    border-top-color: rgb(47, 84, 119);
+  }
+  100% {
+    border-bottom-color: rgb(45, 35, 133);
+    border-left-color: rgb(41, 129, 212);
+    border-right-color: rgb(23, 35, 77);
+  }
+}
+.my-sites {
+  border: 1px solid #e4e2ff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  animation: border-color 3s ease infinite;
+}
+
+#home {
+  text-align: center;
+  justify-content: center;
+}
+
+.center {
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  font-size: 50pt;
+  color: rgb(121, 140, 201);
 }
